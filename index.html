@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle of Bugs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+
+</head>
+<body>  
+    <header>
+        <h1>Battle of Bugs - Debugging Event</h1>
+    </header>
+
+    <!-- Login Section -->
+    <section id="login-section">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </section>
+
+    <!-- Round Selection Section -->
+    <section id="round-selection-section">
+        <h2>Select Round</h2>
+        <button onclick="selectRound(1)">Round 1</button>
+        <button onclick="selectRound(2)">Round 2</button>
+        <button onclick="selectRound(3)">Round 3</button>
+    </section>
+
+    <!-- Coding Section -->
+    <section id="coding-section">
+        <div class="coding-container">
+            <div id="buggy-code" class="buggy-code">
+                <!-- Buggy code will be loaded here -->
+            </div>
+            <div class="editor-container">
+                <h2 id="round-title"></h2>
+                <!-- Timer UI here -->
+                <div id="timer">Timer: 00:00</div>
+                <textarea id="codeArea" rows="10" placeholder="Write your code here"></textarea>
+                <button onclick="submitCode()">Submit Code</button>
+            </div>
+            <div class="output-container">
+                <h2>Output</h2>
+                <iframe id="outputFrame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

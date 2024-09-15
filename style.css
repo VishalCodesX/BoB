@@ -1,0 +1,171 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, rgba(0, 39, 77, 0.8), rgba(0, 64, 128, 0.8)), 
+                url('BG.jpeg'); /* Add your background image URL */
+    background-size: cover; /* Make sure the image covers the whole background */
+    background-position: center; /* Center the background image */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    position: absolute;
+    top: 50px; /* Adjusted position */
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Bold and attractive font */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Section Styling */
+section {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px; /* Limit max width */
+    margin: 0 auto;
+}
+
+/* Input and Button Styling */
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="email"],
+input[type="password"] {
+    background: #fff;
+    color: #333;
+}
+
+textarea {
+    background: #fff;
+    color: #333;
+    resize: vertical;
+}
+
+button {
+    background: #ff5722; /* Bright contrast color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px 0; /* Spacing between buttons */
+}
+
+button:hover {
+    background: #e64a19; /* Darker shade on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Hide sections initially */
+#round-selection-section,
+#coding-section {
+    display: none;
+}
+
+/* Adjust layout for coding section */
+.coding-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.buggy-code {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+    height: 400px; /* Adjust height as needed */
+}
+
+.editor-container {
+    flex: 2;
+}
+/* Adjust layout for coding section */
+.coding-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Styling for the buggy code and editor container */
+.buggy-code {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+    height: 400px; /* Adjust height as needed */
+}
+
+/* Styling for CodeMirror editor */
+.editor-container {
+    flex: 2;
+}
+
+/* Styling for the output container */
+.output-container {
+    flex: 1;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 10px;
+    height: 400px; /* Adjust height as needed */
+}
+
+#outputFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Hide output container initially */
+.output-container {
+    display: none;
+    flex: 1;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 10px;
+    height: 400px; /* Adjust height as needed */
+}
+
+#outputFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
